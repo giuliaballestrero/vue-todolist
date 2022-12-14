@@ -7,11 +7,11 @@ createApp ( {
             todoItem: '',
 
             todos: [
-                { text: 'Fare i compiti', done: false }, 
-                { text: 'Fare la spesa', done: true }, 
-                { text: 'Fare il bucato', done: false }, 
-                { text: 'Fare i compiti', done: false }, 
-                { text: 'Fare la spesa', done: true }, 
+                { text: 'Syberia The World Before', done: false }, 
+                { text: 'Gibbous - A Cthulhu Adventure', done: true }, 
+                { text: 'Pentiment', done: false }, 
+                { text: 'Her Story', done: false }, 
+                { text: 'Alice Madness Return', done: true }, 
             ],
         }
 
@@ -29,6 +29,14 @@ createApp ( {
             itemIndex = this.todos.indexOf(itemToDelete);
             if (itemIndex > -1 ) {
                 this.todos.splice(itemIndex, 1)
+            }
+        },
+
+        doneUndone (itemToChange) {
+            if (itemToChange.done === true) {
+                itemToChange.done = false;
+            } else {
+                itemToChange.done = true;
             }
         }
   
