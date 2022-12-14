@@ -46,7 +46,7 @@
 
                         <div class="ul-wrapper">
                             <ul>
-                                <li class="bg-dark text-light shadow" v-for="element in todos" :class="(todos.done === true) ? 'text.done' : '' ">
+                                <li class="bg-dark text-light shadow" v-for="(element) in todos" :class="(element.done === true) ? 'text-done' : '' ">
                                     {{element.text}}
                                 </li>
 
