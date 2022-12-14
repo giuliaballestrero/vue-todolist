@@ -1,0 +1,31 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    letter-spacing: .2rem;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+ul li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+i {
+    color: green;
+}
+
+.text-done {
+    text-decoration: line-through;
+}
