@@ -20,8 +20,11 @@ createApp ( {
 
     methods: {
         newItem () {
-            this.todos.push({text:this.todoItem, done: 'false'});
-            this.todoItem = '';
+            if (this.todoItem.length > 1) {
+                this.todos.push({text:this.todoItem, done: 'false'});
+                this.todoItem = '';  
+            }
+            
 
         },
 
