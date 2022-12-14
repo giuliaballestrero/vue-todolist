@@ -1,6 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url(https://external-preview.redd.it/o4Od0NFrdGEPYzS01inZqOQaC8rQOZWtqoK6G0nugkY.png?auto=webp&s=3ded14c8c1ce9d592ca64db296166d06c949bb63);
+
+    background-position: center;
+    height: 100vh;
 }   
 
 h1 {
