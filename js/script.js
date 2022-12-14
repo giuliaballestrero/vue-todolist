@@ -19,15 +19,16 @@ createApp ( {
     },
 
     methods: {
-        newItem (content) {
+        newItem () {
             this.todos.push({text:this.todoItem, done: 'false'});
+            this.todoItem = '';
 
         },
 
         deleteItem (itemToDelete) {
-            itemIndex = this.todos.text.indexOf(itemToDelete);
+            itemIndex = this.todos.indexOf(itemToDelete);
             if (itemIndex > -1 ) {
-                this.todos.text.splice(itemIndex, 1)
+                this.todos.splice(itemIndex, 1)
             }
         }
   
